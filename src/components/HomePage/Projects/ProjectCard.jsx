@@ -14,12 +14,12 @@ export default function ProjectCard({ project }) {
       <CardHeader
         shadow={false}
         floated={false}
-        className="m-0 w-2/5 shrink-0 rounded-r-none"
+        className="m-0 w-2/5 shrink-0 rounded-r-none my-auto"
       >
         <img
           src={image}
-          alt="card-image"
-          className="h-full w-full object-contain p-4"
+          alt="project"
+          className="h-4-5 w-4/5 object-contain p-4 mx-auto"
         />
       </CardHeader>
       <CardBody>
@@ -29,7 +29,7 @@ export default function ProjectCard({ project }) {
         <Typography color="gray" className="mb-8 font-normal">
           {content}
         </Typography>
-        <a href="#" className="inline-block">
+        <a href="/projects#store" className="inline-block">
           <Button variant="text" className="flex items-center gap-2">
             Learn More
             <svg

@@ -1,4 +1,4 @@
-import { Typography } from "@material-tailwind/react";
+import { IconButton, Tooltip, Typography } from "@material-tailwind/react";
 import React from "react";
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
 import { Link } from "react-router-dom";
@@ -35,11 +35,21 @@ const Hero = () => {
           looking for new challenges and opportunities to grow as a developer.
         </Typography>
         <div className="flex space-x-2 mt-4">
-          <Link to={{ pathname: "https://github.com" }} target="_blank">
-            <AiFillGithub size={"2em"} />
-          </Link>
-          <AiFillLinkedin size={"2em"} />
-          <AiFillMail size={"2em"} />
+          <Tooltip content="Github">
+            <IconButton className="bg-blue-800">
+              <AiFillGithub size={"2em"} />
+            </IconButton>
+          </Tooltip>
+          <Tooltip content="Linkedin">
+            <IconButton className="bg-blue-800">
+              <AiFillLinkedin size={"2em"} />{" "}
+            </IconButton>
+          </Tooltip>
+          <Tooltip content="Contact">
+            <IconButton className="bg-blue-800">
+              <AiFillMail size={"2em"} />{" "}
+            </IconButton>
+          </Tooltip>
         </div>
       </div>
     </div>

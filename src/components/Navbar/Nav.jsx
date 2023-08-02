@@ -26,6 +26,16 @@ export default function Nav() {
         color="blue-gray"
         className="p-1 font-normal"
       >
+        <a href="/" className="flex items-center">
+          Home
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
         <a href="/about" className="flex items-center">
           About
         </a>
