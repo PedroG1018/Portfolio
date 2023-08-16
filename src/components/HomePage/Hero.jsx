@@ -36,12 +36,22 @@ const Hero = () => {
         </Typography>
         <div className="flex space-x-2 mt-4">
           <Tooltip content="Github">
-            <IconButton className="bg-blue-800">
+            <IconButton
+              className="bg-blue-800"
+              onClick={() => window.open("https://github.com/PedroG1018")}
+            >
               <AiFillGithub size={"2em"} />
             </IconButton>
           </Tooltip>
           <Tooltip content="Linkedin">
-            <IconButton className="bg-blue-800">
+            <IconButton
+              className="bg-blue-800"
+              onClick={() =>
+                window.location.open(
+                  "https://www.linkedin.com/in/pedro-gutierrez-jr/"
+                )
+              }
+            >
               <AiFillLinkedin size={"2em"} />{" "}
             </IconButton>
           </Tooltip>
